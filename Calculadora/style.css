@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+main {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+p {
+    color: #444;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+.user-input {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #28a745; 
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-bottom: 1.5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+
+.tabela {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.85rem;
+}
+
+.imc, .classificacao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imc p:first-child, 
+.classificacao p:first-child {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+
+.imc p, 
+.classificacao p {
+    margin: 0;
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+}
+
+
+.imc p:nth-child(even), 
+.classificacao p:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.imc p:last-child, 
+.classificacao p:last-child {
+    border-bottom: none;
+}
